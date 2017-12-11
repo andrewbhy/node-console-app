@@ -4,6 +4,7 @@
 This is simple node console app, supporting 
 
 - ES6 ( babel-preset-env ) & Source Map
+- ESLint ( change .eslintrc, .eslintignore, .vscode\settings.json to modify the lint behavior )
 - jest ( unit testing )
 - hot reloading ( babel-watch, yarn run watch )
 - debugging with VSCode ( press F5 to launch )

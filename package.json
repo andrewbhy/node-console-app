@@ -1,0 +1,25 @@
+{
+  "name": "node-console-app",
+  "version": "0.0.1",
+  "description": "Simple console app environment with ES6",
+  "main": "src/index.js",
+  "repository": "https://github.com/andrewbhy/node-console-app",
+  "author": "andrew.yoo <andrewbhy@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-watch": "^2.0.7",
+    "eslint": "^4.13.0",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "jest": "^21.2.1"
+  },
+  "scripts": {
+    "build": "rimraf bin && mkdir bin && babel src --out-dir bin",
+    "start": "yarn run build && node bin\\index.js",
+    "watch" : "babel-watch src"
+  }
+}

@@ -6,6 +6,7 @@ export default class Util {
 
     someFunc (){
         console.log("Hello World")
+        
     }
 
 }

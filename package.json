@@ -20,6 +20,7 @@
   "scripts": {
     "build": "rimraf bin && mkdir bin && babel src --out-dir bin",
     "start": "yarn run build && node bin\\index.js",
-    "watch" : "babel-watch src"
+    "watch" : "babel-watch src",
+    "test" :"jest"
   }
 }

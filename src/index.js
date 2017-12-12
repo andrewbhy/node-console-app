@@ -5,11 +5,14 @@ console.log(chalk.yellowBright("Started:"),chalk.greenBright(new Date()))
 
 
 
+
 let x = new Util();
-x.someFunc(); 
 
 
+console.warn("hey")
 let makePromiseFail = false;
 x.somePromiseFunc(makePromiseFail).then(console.log).catch(console.error)
+
+debugger
 
 

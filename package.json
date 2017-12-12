@@ -18,8 +18,8 @@
     "jest": "^21.2.1"
   },
   "scripts": {
-    "build": "rimraf bin && mkdir bin && babel src --out-dir bin",
-    "start": "yarn run build && node bin\\index.js",
+    "build": "rimraf build && mkdir build && babel src --out-dir build",
+    "start": "yarn run build && node build/index.js",
     "watch" : "babel-watch src",
     "test" :"jest"
   }

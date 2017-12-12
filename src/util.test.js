@@ -28,8 +28,5 @@ test('somePromiseFunction throws error when input is true', ()=>{
 test('somePromiseFunction will resolve when input is false', ()=>{
     
         let x = new Util ()
-    
         expect(    x.somePromiseFunc(false) ).resolves.toBeDefined()
-    
-    
-    })
+})

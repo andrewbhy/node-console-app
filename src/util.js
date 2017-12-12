@@ -22,4 +22,29 @@ export default class Util {
             }
         })
     }
+
+    static print2DArray({data,length}){
+
+
+        if(!data || Array.isArray(data) == false ){
+            console.error(chalk.bgRed("invalid input"))
+            return;
+        }
+
+
+        for(let i = 0; i < data.length; ++i){
+
+            if(!data[i] || Array.isArray(data[i])==false){
+                continue
+            }
+            let str = ""
+            let row = data[i]
+            for(let j = 0; j < row.length; ++j){
+                str += row[j].toString().padStart(length||5)
+            }
+            console.log(chalk.cyanBright(str))
+        }
+    }
+
+    
 }

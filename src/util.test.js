@@ -1,6 +1,8 @@
 
 import chalk from 'chalk'
 import Util from './util'
+import polyfill from './polyfill'
+
 
 //override console warn&log function so that jest can detect the function calls
 console = {
@@ -40,6 +42,20 @@ describe('util', () => {
 
             Util.print2DArray({})
             expect(console.log).toHaveBeenCalledWith(chalk.red("invalid input"))
+        })
+
+        it('prints "" for input  data : []',()=>{
+            
+            Util.print2DArray({ data:[],})
+            expect(console.log).toHaveBeenCalledWith(chalk.cyanBright(""))
+
+        })
+
+        it('prints " 1 2 3" for input  data : [[1,2,3]], length 2',()=>{
+            
+            Util.print2DArray({ data:[[1,2,3]],length:2})
+            expect(console.log).toHaveBeenCalledWith(chalk.cyanBright(" 1 2 3"))
+
         })
     })
 })

@@ -22,5 +22,10 @@
     "start": "yarn run build && node build/index.js",
     "watch" : "babel-watch src",
     "test" :"jest"
+  },
+  "jest" :{
+    "verbose" :true,
+    "testPathIgnorePatterns": ["/node_modules/","/build/"]
+
   }
 }

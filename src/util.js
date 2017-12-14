@@ -30,7 +30,9 @@ export default class Util {
             console.log(chalk.red("invalid input"))
             return;
         }
-
+        if(data.length ==0){
+            console.log("")
+        }
 
         for(let i = 0; i < data.length; ++i){
 
@@ -43,6 +45,7 @@ export default class Util {
                 str += row[j].toString().padStart(length||5)
             }
             console.log(chalk.cyanBright(str))
+           
         }
     }
 

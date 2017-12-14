@@ -27,7 +27,7 @@ export default class Util {
 
 
         if(!data || Array.isArray(data) == false ){
-            console.error(chalk.bgRed("invalid input"))
+            console.log(chalk.red("invalid input"))
             return;
         }
 
